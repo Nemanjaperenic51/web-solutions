@@ -1,0 +1,328 @@
+:root {
+    --darkBlue: #140035;
+    --lightBlue: #39a1ff;
+    --bela: #fff;
+    --lightGrey: #f7f7f7;
+    --font: 16px;
+    --transition: .6s ease;
+    --padding: 100px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**************************
+***************************
+        H E A D E R
+***************************
+***************************/
+
+
+header {
+    background: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header hgroup {
+    position: relative;
+    top: 250px;
+    left: 60px;
+}
+
+header hgroup h1{
+    font-size: 3rem;
+    color: var(--darkBlue);
+}
+
+header hgroup p {
+    font-size: 1.2rem;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: var(--lightGrey);
+}
+
+button {
+    font-size: 1.7rem;
+    padding: 10px 10px;
+    margin-top: 10px;
+    background: var(--darkBlue);
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background: transparent;
+    border: 1px solid blue;
+    transition: var(--transition);
+}
+
+/**************************
+***************************
+        A B O U T
+***************************
+***************************/
+.container {
+    max-width: 1114px;
+    justify-content: center;
+    margin: 10px auto; 
+}
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 70px auto;
+}
+
+.about article:nth-child(1) {
+    flex: 0 0 50%;
+    
+}
+
+.about article:nth-child(2) {
+    flex: 0 0 40%;
+    background: var(--lightBlue);
+    padding: 30px;
+    color: #fff;
+}
+
+.about article:nth-child(1) h1 {
+    font-size: 2rem;
+    color: var(--lightBlue);
+    padding-bottom: 10px;
+    
+}
+
+.about article p {
+    padding-bottom: 10px;
+}
+
+    
+/**************************
+***************************
+       S E R V I C E S
+***************************
+***************************/
+.services article {
+    width: 33%;
+    float: left;
+    padding: 20px;
+}
+
+.services article img {
+    width: 100%;
+}
+
+.services h2 {
+    font-size: 3rem;
+    color: var(--darkBlue);
+}
+
+.services p {
+    padding: 10px 0 30px 0;
+}
+
+/**************************
+***************************
+       P R O J E C T
+***************************
+***************************/
+.project hgroup {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.project hgroup  h1{
+    font-size: 2.1rem;
+}
+
+.project hgroup  P{
+    color: #6b6b6b;
+}
+.project .wrap {
+    display: flex;
+  
+}
+
+.project .wrap article {
+      margin-right: 50px;
+      flex: 0 0 30%;
+      text-align: center;
+}
+
+.project .wrap article img{
+    width: 100%;
+    border-radius: 10px;
+}
+.project .wrap article p{
+    text-align: justify;
+}
+
+/**************************
+***************************
+        F O O T E R
+***************************
+***************************/
+
+footer {
+    background-color: var(--lightBlue);
+    padding: var(--padding);
+    color: var(--lightGrey);
+    margin-top: 90px;
+}
+
+footer .wrap1 {
+    display: flex;
+}
+
+footer article {
+    flex: 0 0 35%;
+    margin-right: 30px;
+}
+
+footer h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer h3 + p {
+    padding: 20px 0;
+}
+
+/**************************
+***************************
+    B O T T O M - B A R
+***************************
+***************************/
+
+.bottom-bar {
+    text-align: center;
+    background: var(--darkBlue);
+    color: #fff;
+}
+
+.bottom-bar p {
+    padding: 40px;
+    font-size: 1.5rem;
+}
+
+/**************************
+***************************
+     R E S P O N S I V E
+***************************
+***************************/
+
+
+@media (max-width: 700px) {
+    
+/**************************
+***************************
+        A B O U T
+***************************
+***************************/
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 70px auto;
+}
+
+.about article:nth-child(1) {
+    flex: 0 0 35%;
+    margin-right: 10px;
+    
+}
+
+.about article:nth-child(2) {
+    flex: 0 0 60%;
+    background: var(--lightBlue);
+    padding: 30px;
+    color: #fff;
+}
+
+.about article:nth-child(1) h1 {
+    font-size: 2rem;
+    color: var(--lightBlue);
+    padding-bottom: 10px;
+    
+}
+
+
+/**************************
+***************************
+       S E R V I C E S
+***************************
+***************************/
+.services article {
+    width: 70%;
+    margin: 20px auto;
+    float: none;
+    padding: 20px;
+}
+
+
+/**************************
+***************************
+       P R O J E C T
+***************************
+***************************/
+.project hgroup {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.project hgroup  h1{
+    font-size: 2.1rem;
+}
+
+.project hgroup  P{
+    color: #6b6b6b;
+}
+.project .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project .wrap article {
+      margin-right: 0px;
+      flex: 0 0 70%;
+      flex-wrap: wrap;
+      margin: 20px auto;
+}
+
+.project .wrap article img{
+    width: 100%;
+    border-radius: 10px;
+}
+.project .wrap article p{
+    text-align: justify;
+}
+
+
+/**************************
+***************************
+        F O O T E R
+***************************
+***************************/
+
+footer {
+    background-color: var(--lightBlue);
+    padding: var(--padding);
+    color: var(--lightGrey);
+    margin-top: 90px;
+}
+
+footer .wrap1 {
+    display: flex;
+}
+
+footer article {
+    flex: 0 0 20%;
+    margin-right: 30px;
+}
+
+
+
+}
